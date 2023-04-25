@@ -1,0 +1,451 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+.codo{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+.codoacodo{
+  
+  height: 80px;
+  width: 60%;
+}
+.codo p{
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+}
+.codoacodo img {
+  max-width: 100%;
+  height: 100%;
+}
+.toggle-menu {
+  width: 40px;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  filter: invert(1);
+  z-index: 1;
+}
+.toggle-menu img {
+  max-width: 100%;
+  border: black solid 1px;
+  border-radius: 5px;
+}
+.main-menu{
+  list-style: none;
+  position: absolute;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(93, 87, 87);
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  
+}
+.main-menu__item{
+  padding: 10px;
+}
+.main-menu--show {
+  transform: translateY(0);
+  padding: 0;
+  position: static;
+  
+  
+  
+}
+#tiket {
+  color: rgb(119, 209, 29);
+}
+.main-menu__link {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  
+  
+}
+.contenedor-aguas__imagen{
+  background-color: black;
+  width: 100vw;
+  margin: 0;
+  display: inline-block;
+
+}
+.contenedor-aguas__imagen img{
+  max-width: 100%;
+  opacity: 0.5;
+}
+.conetenedor-aguas__contenido{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  max-width: 50%;
+  height: 30%;
+  align-items: end;
+  right: 10%;
+  bottom: 30%;
+  
+  
+  
+
+}
+.back-ground{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: end;
+  background-image: url(hawaii.jpg);
+  
+  
+  
+  opacity: 1;
+  
+  
+  background-position: center;
+  width: 100vw;
+  height: 500px;
+  
+
+}
+.bg-content{
+  width: 100%;
+  color:white;
+  background-color: rgba(0, 0, 0, 0.566);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 30px;
+  margin: auto;
+  
+  
+}
+.bg-content p{
+  text-align: start;
+}
+.bg-content h1{
+  text-align: start;
+}
+.conetenedor-aguas__contenido p{
+  color: white;
+  font-weight: bold;
+}
+.conetenedor-aguas__contenido h1{
+  color: white;
+  font-weight: bold;
+}
+
+.botones{
+  display: flex;
+}
+.transparente {
+  color: white;
+  border: solid white 1px;
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.verde {
+  color: white;
+  font-weight: bold;
+  border: solid white 1px;
+  border-radius: 5px;
+  background-color: rgb(119, 209, 29);
+}
+
+.titulo-oradores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.tarjetero{
+  width: 70vw;
+ 
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.tarjetero__tarjeta{
+  
+  border: solid 1px grey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  
+}
+
+.imagen{
+  width: 100%;
+  
+  max-height: 50%;
+}
+
+.imagen img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  
+}
+.tarjetero__tarjeta p{
+  padding: 10px;
+  margin: 0;
+}
+
+.tarjetero__tarjeta h3{
+  padding: 10px;
+  margin: 0;
+}
+.tags{
+  padding: 10px;
+}
+
+.octubre {
+  border: solid 1px whitesmoke;
+  display: flex;
+  margin-top: 30px;
+}
+.octubre img {
+  width: 50%;
+  border: 1px white solid;
+}
+.octubre .fondogris {
+  background-color: rgb(69, 69, 76);
+  color: white;
+  border: solid 1px white;
+}
+.octubre .fondogris button {
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  padding: 5px;
+}
+.octubre .fondogris div {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.fila1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.fila1 p {
+  margin: 0;
+  color: grey;
+}
+.fila1 h4 {
+  margin-bottom: 5px;
+}
+
+.formul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+.formul textarea {
+  width: 100%;
+  margin: 10px 0;
+}
+.formul .supra {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.formul .supra input {
+  width: 48%;
+}
+.formul p {
+  color: grey;
+  font-size: 0.8rem;
+  align-self: flex-start;
+}
+.formul input[Type=submit] {
+  width: 100%;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(119, 209, 29);
+  border-radius: 5px;
+}
+
+footer {
+  height: 80px;
+  background-color: rgb(9, 86, 109);
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: serif;
+  
+}
+#p-f p{
+  margin: 0;
+}
+
+/* responsive*/
+
+@media screen and (max-width:768px){
+  footer{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+  }
+  #p-f p{
+    display:inline-block;
+  }
+
+  footer a{
+    padding: 5px;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+  
+  }
+  
+}
+@media screen and (min-width: 768px) {
+  .toggle-menu {
+    display: none;
+    
+  }
+ 
+ 
+}
+@media screen and (max-width: 1280px) {
+
+  .codo{
+    flex-direction: column;
+    justify-content: center;
+    
+    
+  }
+  .codoacodo{
+  
+    height: 80px;
+    width: 100%;
+  }
+  .codo p{
+    margin: 0;
+    height: 50%;
+  }
+  
+}
+@media screen and (min-width: 768px) {
+  .main-menu {
+    flex-direction: row;
+    transform: translateY(0);
+    padding: 0;
+    justify-content: space-around;;
+    position: relative;
+  }
+  
+}
+@media screen and (min-width: 768px) {
+  .back-ground{
+    display: none;
+  }
+
+  
+}
+@media screen and (max-width: 768px) {
+  .contenedor-aguas__imagen{
+    display: none;
+  }
+  
+}
+@media screen and (max-width:846px){
+  .tarjetero{
+    width: 90vw;
+    
+  }
+
+  
+}
+@media screen and (max-width:640px){
+
+  .tarjetero{
+    display: none;
+  }
+  
+.tarjetero-2{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.tarjetero__tarjeta-2{
+  
+  border: solid 1px grey;
+  border-radius: 5px;
+ 
+  
+}
+  
+}
+@media screen and (max-width:464px){
+  .bg-content button{
+    width: 100%;
+    margin: 5px;
+  }
+  .titulo-oradores{
+    margin: 10px 0;
+  }
+  .fila1{
+    text-align: center;
+  }
+  .octubre{
+    flex-direction: column;
+  }
+  .octubre img{
+    display: none;
+  }
+  .codoacodo{
+  
+    height: 100%;
+    width: 100%;
+  }
+  .codo p{
+    display: none;
+  }
+
+  .bg-content{
+    font-size: 1rem;
+  }
+  
+  
+}
+
+
+
+      
+
+
+
+
