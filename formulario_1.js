@@ -1,55 +1,53 @@
 
-    const valorDelTicket = 200
-    const t80 = valorDelTicket - (valorDelTicket*80/100)
-    const t50 = valorDelTicket - (valorDelTicket*50/100)
-    const t15 = valorDelTicket - (valorDelTicket*15/100) 
+   
+const t0= 200;
+const t80= t0 - (80*t0/100);
+const t50 = t0/2;
+const t15 = t0 - (15*t0/100);
+
+
+const select = document.getElementById('selector1');
+const cantidad_t = document.getElementById('cantidad1');
+const total = document.getElementById('total1');
+const resumen = document.getElementById('btn_resumen');
+const reset = document.getElementById('borrar');
 
 
 
 
-const selector = document.getElementById('selector1');
+    
+    resumen.addEventListener('click',()=>{
+        let condicion = select.value;
+        let cv = cantidad_t.value;
 
-const cantidad = document.getElementById('cantidad1')
-
-const valorTotal = document.getElementById('total1')
-
-const resumen1 = document.getElementById('btn_resumen')
-
-
-
-resumen1.addEventListener('click', validar);
-
-function validar (){
-    var categoriaElegida = selector
-
-    if (categoriaElegida.value == 0 || categoriaElegida.value == "")
-    {
-        
-        valorTotal.innerText = valorDelTicket * cantidad.value
-
+    if (condicion == 0 || condicion == "")
+    { 
+        total.innerText = t0 * cv
     } 
-    if (categoriaElegida.value == 1)
+    if (condicion == 1)
     {
-        valorTotal.innerText = t80*cantidad.value
+        total.innerText = t80*cv
+    }
+    if (condicion == 2)
+    {
+        total.innerText = t50*cv 
+    }
+    if (condicion== 3)
+    {
+        total.innerText = t15*cv
+    }
+
+    })
         
-    }
-    if (categoriaElegida.value == 2)
-    {
-        valorTotal.innerText = t50*cantidad.value
-        
-    }
-    if (categoriaElegida.value == 3)
-    {
-        valorTotal.innerText = t15*cantidad.value
-       
-    }
+    
+
+
+reset.addEventListener('click',borrar);
+function borrar(){
+    document.querySelector('.formulario_1').reset();
+    total.innerText = null;
 
 };
-document.getElementById('borrar').addEventListener('click',()=>{
-  let resetFormulario= document.querySelector('.formulario_1');
-  resetFormulario.reset();
-  valorTotal.innerText = null
-})
 
 
     
