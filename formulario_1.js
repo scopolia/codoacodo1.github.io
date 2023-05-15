@@ -2,7 +2,7 @@
     const valorDelTicket = 200
     const t80 = valorDelTicket - (valorDelTicket*80/100)
     const t50 = valorDelTicket - (valorDelTicket*50/100)
-    const t20 = valorDelTicket - (valorDelTicket*20/100) 
+    const t15 = valorDelTicket - (valorDelTicket*15/100) 
 
 
 
@@ -40,7 +40,7 @@ function validar (){
     }
     if (categoriaElegida.value == 3)
     {
-        valorTotal.innerText = t20*cantidad.value
+        valorTotal.innerText = t15*cantidad.value
        
     }
 
