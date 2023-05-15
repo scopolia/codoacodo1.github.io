@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+</head>
+<body>
+    
+
+    <nav class="main-nav">
+        <div class="toggle-menu" id="toggle-menu">
+            <img src="Logo-menu.png" alt="icono menu">
+        </div>
+        <ul class="main-menu" id="main-menu">
+
+            <div class="codo">
+                <div class="codoacodo">
+                <img  src="codoacodo.png" alt="logo codo a codo">
+                </div>
+                <p> Conf Bs As</p>
+            </div>
+            
+
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link"> La conferencia</a>
+            </li>
+
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link"> Los oradores</a>
+            </li>
+
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link"> El lugar y la fecha</a>
+            </li>
+
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link"> Conviertete en orador</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link"> Conviertete en orador</a>
+            </li>
+            <li class="main-menu__item" >
+                <a id="tiket" href="index.html" class="main-menu__link"> HOME</a>
+            </li>
+        </ul>
+</nav>
+
+<section class="compra">
+
+    <div class="grid_cards">
+        <div class=" card card_1">
+            <h3>Estudiante</h3>
+            <p>Tienen un descuento</p>
+            <p class="descuento">80%</p>
+            <p>* presentar documentacion</p>
+
+        </div>
+        <div class="card card_2">
+            <h3>Trainee</h3>
+            <p>Tienen un descuento</p>
+            <p class="descuento">50%</p>
+            <p>* presentar documentacion</p>
+        </div>
+        <div class="card card_2">
+            <h3>Junior</h3>
+            <p>Tienen un descuento</p>
+            <p class="descuento">15%</p>
+            <p>* presentar documentacion</p>
+        </div>
+    </div>
+
+    <div class="text_venta">
+        <p>VENTA</p>
+        <h1>VALOR DEL TICKET $200</h1>
+    </div>
+
+    
+
+    <form class="formulario_1" action="" id="reset">
+
+        <div class="nombre-apellido">
+            <input type="text" placeholder="Nombre" required>
+            <input type="text" placeholder="Apellido"required>
+        </div>
+
+        <input class="e-mail" type="email" placeholder="Correo" required>
+
+        <div class="c-c">
+            
+            
+        </div>
+
+        <div class="cantidad_categoria">
+
+            <div class="cantidad">
+                <p>Cantidad</p>
+                <input type="number" placeholder="Cantidad" id="cantidad1" value="1" min="1" max="100">
+
+            </div>
+
+           <div class="categoria">
+            <p>Categoria</p>
+
+
+            <select  class="selector" id="selector1">
+
+
+                <option value="0" id="estudiante"> Selecciones una opcion</option>
+                <option value="1" id="estudiante"> Estudiante</option>
+                <option value="2" id="trainee"> Trainee</option>
+                <option value="3" id="junior" > Junior</option>
+
+            </select>
+
+           </div>
+            
+        </div>
+
+
+
+        <div class="total">
+            <p id="total_pagar">Total a pagar: $ <p id="total1"></p> </p>
+
+        </div>
+
+        <div class="botones">
+        <input type="button" value="Borrar" id="borrar">
+        <input type="button" value="Resumen" id="btn_resumen">
+    </div>
+
+    </form>
+
+       
+</section>
+
+
+
+<footer class="footer_1">
+    <a href="#" id="p-f">
+        <p>Preguntas&nbsp</p>
+        <p>frecuentes</p>
+        </a>
+    <a href="#">Contactanos</a>
+    <a href="#">Prensa</a>
+    <a href="#">Conferencias</a>
+    <a href="#" id="p-f"> <p>Terminos y&nbsp</p> 
+                    <p>condiciones</p></a>
+    <a href="#">Privacidad</a>
+    <a href="#">Estudiantes</a>
+
+   </footer>
+
+
+
+   <script src="formulario_1.js"></script>
+</body>
+</html>
